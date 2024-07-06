@@ -10,7 +10,7 @@ public class Card {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    @Column(scale = 2, precision = 13, unique = true)
+    @Column(unique = true)
     private String number;
 
     @Column(name = "available_limit", scale = 2, precision = 13)

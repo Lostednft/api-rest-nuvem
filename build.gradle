@@ -25,6 +25,12 @@ dependencies {
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+}
+tasks.jar{
+	manifest{
+		attributes["Main-Class"] = "com.project_railway.Application"
+	}
 }
 
 tasks.named('test') {
